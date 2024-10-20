@@ -114,6 +114,7 @@ main .s-posts .container {
   gap: 2rem;
   padding: 4rem;
   border: 2px solid #252529;
+  transition: all 0.3s ease;
 }
 .card-post .header-card {
   display: flex;
@@ -133,7 +134,7 @@ main .s-posts .container {
   background-image: url(../../img/icon-heart-active.png);
 }
 .card-post:has(.favorited) {
-  border: 1px solid #E07B67;
+  border-color: #E07B67;
 }
 
 footer .container {

@@ -3,6 +3,7 @@
    @include flex($direction: column, $gap: 2rem);
    padding: 4rem;
    border: 2px solid $dark-40;
+   transition: all .3s ease;
    .header-card {
        @include flex($justify: space-between, $align: center);
        .heart {
@@ -16,7 +17,7 @@
        }
    }
    &:has(.favorited) {
-    border: 1px solid $brand-color;
+    border-color: $brand-color ;
    }
 
 }
