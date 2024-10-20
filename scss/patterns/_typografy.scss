@@ -1,0 +1,36 @@
+body {
+    background: #000;
+}
+
+h1 {
+    @extend %font-family2;
+    @extend %font-color-light;
+    font-size: clamp(3rem, 6vw, 4rem);
+    span {
+        font-size: inherit;
+    }
+}
+
+h2 {
+    @extend %font-family2;
+    @extend %font-color-light;
+    font-size: clamp(2rem, 4vw, 2.4rem);
+}
+
+p {
+    @extend %font-family1;
+    @extend %font-color-medium;
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    
+}
+
+input::placeholder {
+    @extend %font-color-medium;
+}
+
+span {
+    @extend %font-family1;
+    color: $brand-color;
+    font-size: clamp(0.8rem, 1.5vw, 1.6rem);
+}
+
