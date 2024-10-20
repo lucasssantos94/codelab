@@ -4,3 +4,7 @@
     margin: 0 auto;
     padding: 2rem 1rem;
 }
+
+header .container {
+    @include flex($direction: column, $align: center, $gap: 2rem);
+}

@@ -16,11 +16,11 @@ img {
   display: block;
 }
 
-span, p {
+input, h2, h1 {
   font-family: inter, sans-serif;
 }
 
-h2, h1 {
+span, p {
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -32,8 +32,8 @@ input::placeholder, p {
   color: #AFABB6;
 }
 
-body {
-  background: #000;
+header {
+  background-color: #121214;
 }
 
 h1 {
@@ -51,6 +51,11 @@ p {
   font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 
+input {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-weight: 500;
+}
+
 span {
   color: #E07B67;
   font-size: clamp(0.8rem, 1.5vw, 1.6rem);
@@ -61,4 +66,25 @@ span {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+header {
+  padding: 2rem 0;
+}
+header input {
+  width: 100%;
+  background-color: #202024;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #252529;
+  padding: 1rem 2.4rem;
+  color: #FFFFFF;
 }
