@@ -1,0 +1,9 @@
+main {
+    @extend %bg-color-dark2;
+    .s-posts {
+        padding: 8rem 0;
+        .container {
+            @include flex($direction: column, $gap: 4rem);
+        }
+    }
+}

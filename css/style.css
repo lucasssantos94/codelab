@@ -32,8 +32,12 @@ input::placeholder, p {
   color: #AFABB6;
 }
 
-header {
+.card-post, header {
   background-color: #121214;
+}
+
+main {
+  background-color: #17171A;
 }
 
 h1 {
@@ -87,4 +91,47 @@ header input {
   border: 0.2rem solid #252529;
   padding: 1rem 2.4rem;
   color: #FFFFFF;
+}
+
+main .s-posts {
+  padding: 8rem 0;
+}
+main .s-posts .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.card-post {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 4rem;
+  border: 2px solid #252529;
+}
+.card-post .header-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.card-post .header-card .heart {
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  background-image: url(../../img/icon-heart.png);
+}
+.card-post .header-card .heart.favorited {
+  background-image: url(../../img/icon-heart-active.png);
+}
+.card-post:has(.favorited) {
+  border: 1px solid #E07B67;
 }

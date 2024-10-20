@@ -1,0 +1,22 @@
+.card-post {
+   @extend %bg-color-dark1;
+   @include flex($direction: column, $gap: 2rem);
+   padding: 4rem;
+   border: 2px solid $dark-40;
+   .header-card {
+       @include flex($justify: space-between, $align: center);
+       .heart {
+           width: 3.2rem;
+           height: 3.2rem;
+           cursor: pointer;
+           background-image: url(../../img/icon-heart.png);
+           &.favorited {
+               background-image: url(../../img/icon-heart-active.png);
+           }
+       }
+   }
+   &:has(.favorited) {
+    border: 1px solid $brand-color;
+   }
+
+}
