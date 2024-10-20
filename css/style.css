@@ -32,7 +32,7 @@ input::placeholder, p {
   color: #AFABB6;
 }
 
-.card-post, header {
+footer, .card-post, header {
   background-color: #121214;
 }
 
@@ -134,4 +134,24 @@ main .s-posts .container {
 }
 .card-post:has(.favorited) {
   border: 1px solid #E07B67;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+footer .container .contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: stretch;
+  gap: 1rem;
+}
+footer .container .contacts img {
+  width: 4.8rem;
 }
