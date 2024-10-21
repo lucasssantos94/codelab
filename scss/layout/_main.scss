@@ -1,3 +1,7 @@
+@use '../mixins/mixins' as *;
+@use '../patterns/patterns' as *;
+
+
 main {
     @extend %bg-color-dark2;
     .s-posts {

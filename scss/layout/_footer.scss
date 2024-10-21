@@ -1,3 +1,6 @@
+@use '../mixins/mixins' as *;
+@use '../patterns/patterns' as *;
+
 footer {
     @extend %bg-color-dark1;
     .container {

@@ -1,3 +1,6 @@
+@use './colors' as *;
+@use './placeholders' as *;
+
 h1 {
     @extend %font-family1;
     @extend %font-color-light;
@@ -16,15 +19,13 @@ h2 {
 p {
     @extend %font-family2;
     @extend %font-color-medium;
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
-    
+    font-size: clamp(1.4rem, 2.5vw, 2rem); 
 }
 
 input {
     @extend %font-family1;
     font-size: clamp(1.6rem, 2.5vw, 2rem);
-    font-weight: 500;  
-    
+    font-weight: 500;      
 }
 
 input::placeholder {

@@ -1,3 +1,2 @@
-@import './mixins/mixins';
-@import './patterns/patterns';
-@import './layout/_layout'; 
+@use './patterns/patterns';
+@use './layout/_layout'; 

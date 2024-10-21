@@ -16,19 +16,19 @@ img {
   display: block;
 }
 
-input, h2, h1 {
+h1, h2, input {
   font-family: inter, sans-serif;
 }
 
-span, p {
+p, span {
   font-family: "Space Grotesk", sans-serif;
 }
 
-h2, h1 {
+h1, h2 {
   color: #FFFFFF;
 }
 
-input::placeholder, p {
+p, input::placeholder {
   color: #AFABB6;
 }
 

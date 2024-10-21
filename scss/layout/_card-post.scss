@@ -1,3 +1,6 @@
+@use '../mixins/mixins' as *;
+@use '../patterns/patterns' as *;
+
 .card-post {
    @extend %bg-color-dark1;
    @include flex($direction: column, $gap: 2rem);
@@ -5,7 +8,7 @@
    border: 2px solid $dark-40;
    transition: all .3s ease;
    @include media-query('sm') {
-       padding: 3.2rem 2.4rem
+       padding: 3.2rem 2.4rem;
    }
    .header-card {
        @include flex($justify: space-between, $align: center);

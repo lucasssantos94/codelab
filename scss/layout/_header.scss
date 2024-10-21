@@ -1,3 +1,5 @@
+@use '../patterns/patterns' as *;
+
 header {
     @extend %bg-color-dark1;
     padding: 2rem 0;
