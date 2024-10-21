@@ -1,14 +1,14 @@
-@use '../patterns/patterns' as *;
+@use '../patterns/patterns' as pattern;
 
 header {
     @extend %bg-color-dark1;
     padding: 2rem 0;
     input {
         width: 100%;
-        background-color: $dark-30;
+        background-color: pattern.$dark-30;
         border-radius: .8rem;
-        border: .2rem solid $dark-40;
+        border: .2rem solid pattern.$dark-40;
         padding: 1rem 2.4rem;
-        color: $color-light;
+        color: pattern.$color-light;
     }
 }

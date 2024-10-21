@@ -1,4 +1,4 @@
-@use './colors' as *;
+@use './colors' as colors;
 
 %font-family1 {
     font-family: inter, sans-serif;
@@ -9,19 +9,19 @@
 }
 
 %font-color-light {
-    color: $color-light;
+    color: colors.$color-light;
 }
 
 %font-color-medium {
-    color: $dark-50;
+    color: colors.$dark-50;
 }
 
 %bg-color-dark1 {
-    background-color: $dark-10;
+    background-color: colors.$dark-10;
 }
 
 %bg-color-dark2 {
-    background-color: $dark-20;
+    background-color: colors.$dark-20;
 }
 
 

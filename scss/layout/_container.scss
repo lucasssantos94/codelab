@@ -1,4 +1,4 @@
-@use '../mixins/mixins' as *;
+@use '../mixins/mixins' as mixin;
 
 .container {
     width: 100%;
@@ -8,5 +8,5 @@
 }
 
 header .container {
-    @include flex($direction: column, $align: center, $gap: 2rem);
+    @include mixin.flex($direction: column, $align: center, $gap: 2rem);
 }

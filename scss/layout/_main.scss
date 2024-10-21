@@ -1,20 +1,22 @@
-@use '../mixins/mixins' as *;
-@use '../patterns/patterns' as *;
-
+@use '../mixins/mixins' as mixin;
+@use '../patterns/placeholders' as placeholder;
 
 main {
-    @extend %bg-color-dark2;
-    .s-posts {
-        padding: 8rem 0;
-        .container {
-            @include flex($direction: column, $gap: 4rem);
-        }
-        @include media-query('md') {
-            padding: 7.2rem 0;
-        }
-        @include media-query('sm') {
-            padding: 4rem 0;
-        }
+  @extend %bg-color-dark2;  
+
+  .s-posts {
+    padding: 8rem 0;
+
+    .container {
+      @include mixin.flex($direction: column, $gap: 4rem);
     }
-    
+
+    @include mixin.media-query('md') {
+      padding: 7.2rem 0;
+    }
+
+    @include mixin.media-query('sm') {
+      padding: 4rem 0;
+    }
+  }
 }

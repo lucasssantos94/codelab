@@ -1,17 +1,17 @@
-@use '../mixins/mixins' as *;
-@use '../patterns/patterns' as *;
+@use '../mixins/mixins' as  mixin;
+@use '../patterns/patterns' as pattern;
 
 .card-post {
    @extend %bg-color-dark1;
-   @include flex($direction: column, $gap: 2rem);
+   @include mixin.flex($direction: column, $gap: 2rem);
    padding: 4rem;
-   border: 2px solid $dark-40;
+   border: 2px solid pattern.$dark-40;
    transition: all .3s ease;
-   @include media-query('sm') {
+   @include mixin.media-query('sm') {
        padding: 3.2rem 2.4rem;
    }
    .header-card {
-       @include flex($justify: space-between, $align: center);
+       @include mixin.flex($justify: space-between, $align: center);
        .heart {
            width: 3.2rem;
            height: 3.2rem;
@@ -23,7 +23,7 @@
        }
    }
    &:has(.heart.favorited) {
-    border-color: $brand-color ;
+    border-color: pattern.$brand-color ;
    }
 
 }
