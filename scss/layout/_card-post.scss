@@ -19,7 +19,7 @@
            }
        }
    }
-   &:has(.favorited) {
+   &:has(.heart.favorited) {
     border-color: $brand-color ;
    }
 
